@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <title>「MIDNIGHT NOCTURNE」</title>
+    <title>「人狼ノ夜会」</title>
     <style>
         body{
             background-image: url(forest-4395986_1920.jpg);
@@ -20,6 +20,7 @@
             }
             
         }
+
         #picture1{
             size: 500%;
             margin-right: 60%;
@@ -38,21 +39,21 @@
             color: gray;
             border-top: gray 5px  solid;
         }
-
         .background1{
             background-color: white;
             padding: 10px;
-            margin-right: calc(50% - 50vw);
+            margin-right: calc(50% - 49.55vw);
             margin-top: calc(49% - 50vw);
             margin-left: calc(50% - 50vw);
             position: sticky;
             top: 0;
         }
+
         h1.title{
             color: white;
             animation: titleani 1.5s ease-in  1  forwards;
             text-align: center;
-            margin:350px 0px 350px 0px;
+            margin:350px 0px 450px 0px;
         }
         @keyframes titleani{
             0%{
@@ -62,20 +63,53 @@
                 opacity: 1;
             }
         }
+
+        .sentence{
+            color: white;
+            background: black;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: slideIn 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+        @keyframes slideIn {
+            0% {
+                transform: translateX(180px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+            }
+            40%,100% {
+                opacity: 1;
+            }
+        }
+
+        div h2{
+            font-size: 60px;
+        }
         
 
 
     </style>
  </head>
  <body>
-    <div class="background1"><span id="picture1"><img src="オンライン人狼ツール.png"alt="タイトル" width="300"/></span>
-    <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
-    <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
-    <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
-    <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a></div>
+    <div class="background1">
+        <span id="picture1"><img src="オンライン人狼ツール.png"alt="タイトル" width="300"/></span>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
+    </div>
+
     <h1 class="title">いつでも、どこでも、誰かと繋がりたい貴方へ</h1>
-    <p><span class="">このウェブサイトはオンライン環境で<div id="first">人狼を行うことを目的としたウェブアプリ</div>です。</p>
-    <p>是非</p>
+
+    <div class="sentence">
+        <h2>ようこそ、人狼達の集う場所、</h2>
+        <h2>「人狼ノ夜会」へ</h2>
+        <p>このウェブサイトはオンライン環境で<span id="first">人狼を行うことを目的としたウェブアプリ</span>です。</p>
+        <p>是非</p>
+    </div>
+
     <p>a</p>
     <p>a</p>
     <p>a</p>
