@@ -29,14 +29,14 @@
             font-size: 250%;
             color: black;
             border-top: black 5px  solid;
+            margin-right: 1%;
         }
         a.link1:hover{
             color: gray;
             border-top: gray 5px  solid;
         }
         .background1{
-            background-color: white;
-            background-color: rgba(red, green, blue)
+            background-color: rgba(255, 255, 255, 1);
             padding: 10px;
             margin-right: calc(50% - 49.55vw);
             margin-top: calc(49% - 50vw);
@@ -64,11 +64,9 @@
 
         .sentence{
             color: white;
-            background: black;
-            width: 50%;
             background-color: rgba(0, 0, 0, 0.5);
             animation: slideIn 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-            margin-left: calc(50% - 50vw);
+            text-align: center
         }
         @keyframes slideIn {
             0% {
@@ -82,10 +80,17 @@
                 opacity: 1;
             }
         }
-
         div h2{
             font-size: 60px;
         }
+
+        .sentence2{
+            color: white;
+            margin: calc(50% - 50vw);
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        
         
 
 
@@ -94,19 +99,31 @@
  <body>
     <div class="background1">
         <span id="picture1"><img src="オンライン人狼ツール.png"alt="タイトル" width=15%/></span>
-        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
-        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
-        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
-        <a href="https://www.docodemo-jinrou.com/" class="link1">テスト</a>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">rule</a>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">update</a>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">about</a>
+        <a href="https://www.docodemo-jinrou.com/" class="link1">others</a>
     </div>
 
     <h1 class="title">いつでも、どこでも、誰かと繋がりたい貴方へ</h1>
 
     <div class="sentence">
-        <h2>ようこそ、人狼達の集う場所、</h2>
+        <h2>ようこそ、欺く者達の集う場所、</h2>
         <h2>「人狼ノ夜会」へ</h2>
-        <p>このウェブサイトはオンライン環境で<span id="first">人狼を行うことを目的としたウェブアプリ</span>です。</p>
-        <p>是非</p>
+        <div class="smallsentence">
+            <p>ここは欺きあう者たちの集う秘密の集会「人狼ノ夜会」。ここでは人狼という名の怪しいゲームが毎晩行われている</p>
+            <p>夜が深まり、月が高く昇るとき、真実と嘘が交錯する舞台が幕を開ける。</p>
+            <p>ここにおける正義とは大儀などではない。欺き、そして勝利した者。</p>
+            <p>Win or die</p>
+        </div>
+    </div>
+
+    <div class="sentence2">
+        <h2>about</h2>
+        <p>人狼ノ夜会とはオンラインで誰とでも人狼を行うことのできる個人開発のサービスです。</p>
+        <p>いつでも、どこでも、誰とでも一緒に人狼を行うことができます</p>
+        <p>PC,スマホ、どちらにも対応しています！</p>
+        <p>※最新のブラウザ推奨</p>
     </div>
 
     <p>a</p>
