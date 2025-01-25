@@ -1,74 +1,64 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
     <title>「人狼ノ夜会」</title>
     <style>
-        body{
+        body {
             background-image: url(forest-4395986_1920.jpg);
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
             animation: fadein 1s ease-in-out 0s 1 normal forwards;
             font-family: serif;
+            margin: 0;
+            padding: 0;
         }
         @keyframes fadein {
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-            
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
-        #picture1{
-            margin-right: 50%;
-        }
-        a.link1{
+        .link1 {
+            width: 100px;
+            height: 50px;
             text-decoration: none;
             font-size: 250%;
             color: black;
-            border-top: black 5px  solid;
-            margin-right: 1%;
+            border-top: black 5px solid;
+            position: relative;
+            top: 5%;
+            left: 60%;
         }
-        a.link1:hover{
+        .link1:hover {
             color: gray;
-            border-top: gray 5px  solid;
+            border-top: gray 5px solid;
         }
-        .background1{
+        .background1 {
             background-color: rgba(255, 255, 255, 1);
-            padding: 10px;
-            margin-right: calc(50% - 49.55vw);
-            margin-top: calc(49% - 50vw);
-            margin-left: calc(50% - 50vw);
             position: sticky;
             top: 0;
             z-index: 9999;
         }
 
-        h1.title{
+        .title {
             color: white;
             font-size: 300%;
-            animation: titleani 1.5s ease-in  1  forwards;
+            animation: titleani 1.5s ease-in 1 forwards;
             text-align: center;
-            margin:350px 0px 450px 0px;
+            margin: 350px 0 450px 0;
         }
-        @keyframes titleani{
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
+        @keyframes titleani {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
-        .sentence{
+        .sentence {
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
             animation: slideIn 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
             text-align: center;
             font-size: 125%;
-            
+            margin-top: 500px;
         }
         @keyframes slideIn {
             0% {
@@ -77,31 +67,20 @@
             }
             100% {
                 transform: translateY(0);
-            }
-            40%,100% {
                 opacity: 1;
             }
         }
-        div h2{
+        .sentence h2 {
             font-size: 60px;
         }
 
-        .sentence2{
-            color: white;
-            margin: calc(50% - 50vw);
-            background-color: rgba(0, 0, 0, 0.5);
-            text-align: center;
-            margin-top: 500px;
-        }
-        
-        
-
-
     </style>
- </head>
- <body>
+</head>
+<body>
     <div class="background1">
-        <span id="picture1"><img src="オンライン人狼ツール.png"alt="タイトル" width=15%/></span>
+        <span id="picture1">
+            <img src="on-line.png" alt="タイトル" width="300px" />
+        </span>
         <a href="https://www.docodemo-jinrou.com/" class="link1">rule</a>
         <a href="https://www.docodemo-jinrou.com/" class="link1">update</a>
         <a href="https://www.docodemo-jinrou.com/" class="link1">about</a>
@@ -116,48 +95,34 @@
         <div class="smallsentence">
             <p>ここは欺きあう者たちの集う秘密の集会「人狼ノ夜会」。</p>
             <p>夜が深まり、月が高く昇るとき、真実と嘘が交錯する舞台が幕を開ける。</p>
-            <p>ここにおける正義とは大儀などではない。欺き、そして勝利した者。ただそれのみ</p>
+            <p>ここにおける正義とは大儀などではない。欺き、そして勝利した者。ただそれのみ。</p>
             <p>勝つのか、はたまた滅亡への道を歩むのか。</p>
-            <p>それを決めるのは自分自身の頭脳。ただ一つ</p>
+            <p>それを決めるのは自分自身の頭脳。ただ一つ。</p>
         </div>
     </div>
 
-    <div class="sentence2">
+    <div class="sentence">
         <h2>about</h2>
         <p>「人狼ノ夜会」とはオンラインで誰とでも人狼を行うことのできる個人開発のwebサービスです。</p>
-        <p>いつでも、どこでも、誰とでも一緒に人狼を行うことができます</p>
-        <p>PC,スマホ、どちらにも対応しています</p>
-        <p>※最新のブラウザ推奨</p>
+        <p>いつでも、どこでも、誰とでも一緒に人狼を行うことができます。</p>
+        <p>PC,スマホ、どちらにも対応しています。</p>
+        <p>※最新のブラウザ推奨。</p>
     </div>
 
-    <h2>独自のルール<h2>
-    <p>役職があろうとなかろうと、一定時間経過で役職の力を使うことができます</p>
-    <p>人狼であろうとも、村人であろうとも、占うことができる、ということです</p>
-    <p></p>
+    <div class="sentence">
+        <h2>独自のルール</h2>
+        <p>人狼ノ夜会では独自のルールをいくつも導入しています。</p>
+        <p>そのどれもが人狼の頭脳戦を加速させるものばかり。</p>
+        <p>一定時間経過で誰しもが能力を使えたり、特殊イベントが引き起こったりなどなど。</p>
+        <p>ここでは頭脳のみがものを言う。</p>
+    </div>
 
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <a href="https://music.youtube.com/watch?v=PUdrCJSly_A&list=RDAMVMPUdrCJSly_A">詳細はこちら</a>
+    <div class="sentence">
+        <h2>分かりやすい</h2>
+        <p></p>
+
+    </div>
+
     <p class="last">&copy; 2025 オンライン人狼ツール「人狼ノ夜会」</p>
-
- </body>
+</body>
 </html>
